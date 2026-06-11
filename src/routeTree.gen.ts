@@ -9,8 +9,62 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VoedingRouteImport } from './routes/voeding'
+import { Route as TrimsalonRouteImport } from './routes/trimsalon'
+import { Route as SupplementenRouteImport } from './routes/supplementen'
+import { Route as SnacksRouteImport } from './routes/snacks'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as OverRouteImport } from './routes/over'
+import { Route as MerkenRouteImport } from './routes/merken'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AdviesRouteImport } from './routes/advies'
 import { Route as IndexRouteImport } from './routes/index'
 
+const VoedingRoute = VoedingRouteImport.update({
+  id: '/voeding',
+  path: '/voeding',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrimsalonRoute = TrimsalonRouteImport.update({
+  id: '/trimsalon',
+  path: '/trimsalon',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupplementenRoute = SupplementenRouteImport.update({
+  id: '/supplementen',
+  path: '/supplementen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SnacksRoute = SnacksRouteImport.update({
+  id: '/snacks',
+  path: '/snacks',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OverRoute = OverRouteImport.update({
+  id: '/over',
+  path: '/over',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MerkenRoute = MerkenRouteImport.update({
+  id: '/merken',
+  path: '/merken',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdviesRoute = AdviesRouteImport.update({
+  id: '/advies',
+  path: '/advies',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +73,158 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/advies': typeof AdviesRoute
+  '/contact': typeof ContactRoute
+  '/merken': typeof MerkenRoute
+  '/over': typeof OverRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/snacks': typeof SnacksRoute
+  '/supplementen': typeof SupplementenRoute
+  '/trimsalon': typeof TrimsalonRoute
+  '/voeding': typeof VoedingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/advies': typeof AdviesRoute
+  '/contact': typeof ContactRoute
+  '/merken': typeof MerkenRoute
+  '/over': typeof OverRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/snacks': typeof SnacksRoute
+  '/supplementen': typeof SupplementenRoute
+  '/trimsalon': typeof TrimsalonRoute
+  '/voeding': typeof VoedingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/advies': typeof AdviesRoute
+  '/contact': typeof ContactRoute
+  '/merken': typeof MerkenRoute
+  '/over': typeof OverRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/snacks': typeof SnacksRoute
+  '/supplementen': typeof SupplementenRoute
+  '/trimsalon': typeof TrimsalonRoute
+  '/voeding': typeof VoedingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/advies'
+    | '/contact'
+    | '/merken'
+    | '/over'
+    | '/sitemap.xml'
+    | '/snacks'
+    | '/supplementen'
+    | '/trimsalon'
+    | '/voeding'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/advies'
+    | '/contact'
+    | '/merken'
+    | '/over'
+    | '/sitemap.xml'
+    | '/snacks'
+    | '/supplementen'
+    | '/trimsalon'
+    | '/voeding'
+  id:
+    | '__root__'
+    | '/'
+    | '/advies'
+    | '/contact'
+    | '/merken'
+    | '/over'
+    | '/sitemap.xml'
+    | '/snacks'
+    | '/supplementen'
+    | '/trimsalon'
+    | '/voeding'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdviesRoute: typeof AdviesRoute
+  ContactRoute: typeof ContactRoute
+  MerkenRoute: typeof MerkenRoute
+  OverRoute: typeof OverRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SnacksRoute: typeof SnacksRoute
+  SupplementenRoute: typeof SupplementenRoute
+  TrimsalonRoute: typeof TrimsalonRoute
+  VoedingRoute: typeof VoedingRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/voeding': {
+      id: '/voeding'
+      path: '/voeding'
+      fullPath: '/voeding'
+      preLoaderRoute: typeof VoedingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/trimsalon': {
+      id: '/trimsalon'
+      path: '/trimsalon'
+      fullPath: '/trimsalon'
+      preLoaderRoute: typeof TrimsalonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supplementen': {
+      id: '/supplementen'
+      path: '/supplementen'
+      fullPath: '/supplementen'
+      preLoaderRoute: typeof SupplementenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/snacks': {
+      id: '/snacks'
+      path: '/snacks'
+      fullPath: '/snacks'
+      preLoaderRoute: typeof SnacksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/over': {
+      id: '/over'
+      path: '/over'
+      fullPath: '/over'
+      preLoaderRoute: typeof OverRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/merken': {
+      id: '/merken'
+      path: '/merken'
+      fullPath: '/merken'
+      preLoaderRoute: typeof MerkenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advies': {
+      id: '/advies'
+      path: '/advies'
+      fullPath: '/advies'
+      preLoaderRoute: typeof AdviesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +237,15 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdviesRoute: AdviesRoute,
+  ContactRoute: ContactRoute,
+  MerkenRoute: MerkenRoute,
+  OverRoute: OverRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SnacksRoute: SnacksRoute,
+  SupplementenRoute: SupplementenRoute,
+  TrimsalonRoute: TrimsalonRoute,
+  VoedingRoute: VoedingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
