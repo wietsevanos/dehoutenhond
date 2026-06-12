@@ -229,7 +229,7 @@ function Home() {
           <div className="rounded-3xl bg-walnut text-cream px-8 md:px-16 py-20 text-center">
             <span className="eyebrow text-gold">Loop binnen</span>
             <h2 className="mt-5 font-serif text-4xl md:text-5xl">
-              Een goed gesprek begint met <span className="italic-serif">een kop koffie</span>.
+              Een goed advies begint met <span className="italic-serif">een persoonlijk gesprek</span>.
             </h2>
             <p className="mt-6 text-cream/80 max-w-xl mx-auto">
               Kom langs in onze winkel aan de Ramplaan 48 in Haarlem. We nemen graag
