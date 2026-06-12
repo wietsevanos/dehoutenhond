@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import grooming from "@/assets/grooming.jpg";
+import groomingAsset from "@/assets/trimsalon-hond.png.asset.json"; const grooming = groomingAsset.url;
 import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/trimsalon")({

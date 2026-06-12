@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Leaf, HeartHandshake, Scissors, Sparkles } from "lucide-react";
 import heroShop from "@/assets/houten-hond-hero.png.asset.json";
-import dogTreat from "@/assets/dog-treat.jpg";
+import dogTreatAsset from "@/assets/vertrouwd-adres.png.asset.json"; const dogTreat = dogTreatAsset.url;
 import rawFoodAsset from "@/assets/natuurvoeding.png.asset.json";
 import dogCatAsset from "@/assets/voedingsadvies.png.asset.json";
 import groomingAsset from "@/assets/trimsalon.png.asset.json";
