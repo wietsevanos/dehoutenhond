@@ -6,7 +6,7 @@ export const Route = createFileRoute("/snacks")({
   head: () => ({
     meta: [
       { title: "Natuurlijke snacks & kauwproducten · De Houten Hond" },
-      { name: "description", content: "Gezonde, natuurlijke snacks en kauwproducten voor honden — Churpi, Lakse Kronch, koffieboom kauwwortel en Van Pom. Haarlem." },
+      { name: "description", content: "Gezonde, natuurlijke snacks en kauwproducten voor honden, Churpi, Lakse Kronch, koffieboom kauwwortel en Van Pom. Haarlem." },
       { property: "og:title", content: "Snacks & kauwproducten" },
       { property: "og:description", content: "Natuurlijke hondensnacks zonder onnodige toevoegingen, geselecteerd in Haarlem." },
     ],
@@ -16,9 +16,9 @@ export const Route = createFileRoute("/snacks")({
 
 const items = [
   { name: "Churpi", desc: "Traditionele Himalaya-kauwsnack voor langdurig kauwplezier. Geschikt voor honden met eiwitgevoeligheid." },
-  { name: "Lakse Kronch", desc: "100% zalm — een gezonde, graanvrije trainingssnack rijk aan natuurlijke vetzuren." },
+  { name: "Lakse Kronch", desc: "100% zalm, een gezonde, graanvrije trainingssnack rijk aan natuurlijke vetzuren." },
   { name: "Koffieboom Kauwwortel", desc: "Duurzame natuurlijke kauwsnack die de natuurlijke gebitsreiniging ondersteunt. Hypoallergeen." },
-  { name: "Van Pom", desc: "Plantaardige groentemixen — een perfecte aanvulling op KVV." },
+  { name: "Van Pom", desc: "Plantaardige groentemixen, een perfecte aanvulling op KVV." },
 ];
 
 function Snacks() {
@@ -31,7 +31,7 @@ function Snacks() {
             Gezonde <span className="italic-serif text-moss">traktaties</span>.
           </h1>
           <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            Snacks waar je hond gelukkig van wordt — en jij ook. Pure ingrediënten,
+            Snacks waar je hond gelukkig van wordt, en jij ook. Pure ingrediënten,
             zonder onnodige toevoegingen.
           </p>
         </Reveal>

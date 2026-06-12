@@ -7,7 +7,7 @@ export const Route = createFileRoute("/contact")({
     meta: [
       { title: "Contact · De Houten Hond Haarlem" },
       { name: "description", content: "Bezoek De Houten Hond aan de Ramplaan 48 in Haarlem. Bel, mail of stuur een bericht voor voedingsadvies of trimsalonafspraken." },
-      { property: "og:title", content: "Contact — De Houten Hond" },
+      { property: "og:title", content: "Contact, De Houten Hond" },
       { property: "og:description", content: "Ramplaan 48, Haarlem · 06 42 61 82 86 · info@dehoutenhond.nl" },
     ],
   }),

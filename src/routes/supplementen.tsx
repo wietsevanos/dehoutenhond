@@ -6,9 +6,9 @@ export const Route = createFileRoute("/supplementen")({
   head: () => ({
     meta: [
       { title: "Supplementen & natuurlijke verzorging · De Houten Hond" },
-      { name: "description", content: "Natuurlijke supplementen en verzorgingsproducten voor honden en katten — voor darmen, huid, vacht, gewrichten en weerstand. Haarlem." },
+      { name: "description", content: "Natuurlijke supplementen en verzorgingsproducten voor honden en katten, voor darmen, huid, vacht, gewrichten en weerstand. Haarlem." },
       { property: "og:title", content: "Supplementen & verzorging" },
-      { property: "og:description", content: "PUUR, Stop Animal Body Guard en meer — natuurlijke ondersteuning op maat." },
+      { property: "og:description", content: "PUUR, Stop Animal Body Guard en meer, natuurlijke ondersteuning op maat." },
     ],
   }),
   component: Supp,
@@ -25,7 +25,7 @@ function Supp() {
           </h1>
           <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-2xl">
             Een breed assortiment supplementen voor darmflora, huid, vacht, gewrichten,
-            weerstand en ouder wordende dieren — altijd gekozen op basis van wat jouw
+            weerstand en ouder wordende dieren, altijd gekozen op basis van wat jouw
             dier echt nodig heeft.
           </p>
         </Reveal>

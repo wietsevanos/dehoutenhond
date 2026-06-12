@@ -9,7 +9,7 @@ export const Route = createFileRoute("/voeding")({
       { title: "Natuurlijke voeding voor hond en kat · De Houten Hond Haarlem" },
       { name: "description", content: "Biologische voeding, KVV, rauwvoer en hypoallergene voeding voor honden en katten in Haarlem. Lees waarom natuurvoeding het verschil maakt." },
       { property: "og:title", content: "Natuurlijke voeding voor hond en kat" },
-      { property: "og:description", content: "KVV, rauwvoer en hypoallergene voeding — specialisme van De Houten Hond Haarlem." },
+      { property: "og:description", content: "KVV, rauwvoer en hypoallergene voeding, specialisme van De Houten Hond Haarlem." },
     ],
   }),
   component: Voeding,
@@ -25,7 +25,7 @@ function Voeding() {
             Natuurlijke voeding voor <span className="italic-serif text-moss">hond en kat</span>.
           </h1>
           <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            Van biologisch droogvoer tot KVV, vers vlees en hypoallergene oplossingen —
+            Van biologisch droogvoer tot KVV, vers vlees en hypoallergene oplossingen,
             wij selecteren alleen voeding die we zelf met vertrouwen aan onze eigen dieren
             zouden geven.
           </p>
@@ -93,7 +93,7 @@ function Voeding() {
               Veel klanten komen voor <span className="italic-serif text-moss">ondersteuning</span>.
             </h2>
             <p className="mt-6 text-base text-foreground/85 leading-relaxed">
-              Jeukende huid, een gevoelige spijsvertering of terugkerende darmklachten —
+              Jeukende huid, een gevoelige spijsvertering of terugkerende darmklachten,
               vaak is voeding een belangrijke factor. We gaan met je in gesprek, kijken
               naar het bredere plaatje en stellen samen een passend voedingsplan op.
             </p>
