@@ -2,10 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Leaf, HeartHandshake, Scissors, Sparkles } from "lucide-react";
 import heroShop from "@/assets/houten-hond-hero.png.asset.json";
 import dogTreat from "@/assets/dog-treat.jpg";
-import rawFood from "@/assets/raw-food.jpg";
-import grooming from "@/assets/grooming.jpg";
-import dogCat from "@/assets/dog-cat.jpg";
+import rawFoodAsset from "@/assets/natuurvoeding.png.asset.json";
+import dogCatAsset from "@/assets/voedingsadvies.png.asset.json";
+import groomingAsset from "@/assets/trimsalon.png.asset.json";
 import brenda from "@/assets/brenda.jpg";
+const rawFood = rawFoodAsset.url;
+const dogCat = dogCatAsset.url;
+const grooming = groomingAsset.url;
 import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/")({
