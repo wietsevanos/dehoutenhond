@@ -6,7 +6,7 @@ export const Route = createFileRoute("/snacks")({
   head: () => ({
     meta: [
       { title: "Natuurlijke snacks & kauwproducten · De Houten Hond" },
-      { name: "description", content: "Gezonde, natuurlijke snacks en kauwproducten voor honden — Churpi, Lakse Kronch, koffieboom kauwwortel en Van Pom. Haarlem." },
+      { name: "description", content: "Gezonde, natuurlijke snacks en kauwproducten voor honden, Churpi, Lakse Kronch, koffieboom kauwwortel en Van Pom. Haarlem." },
       { property: "og:title", content: "Snacks & kauwproducten" },
       { property: "og:description", content: "Natuurlijke hondensnacks zonder onnodige toevoegingen, geselecteerd in Haarlem." },
     ],
