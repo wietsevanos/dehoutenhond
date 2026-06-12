@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import rawFood from "@/assets/raw-food.jpg";
-import dogCat from "@/assets/dog-cat.jpg";
+import dogCatAsset from "@/assets/hond-kat.png.asset.json"; const dogCat = dogCatAsset.url;
 import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/voeding")({
