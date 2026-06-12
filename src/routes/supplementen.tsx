@@ -25,7 +25,7 @@ function Supp() {
           </h1>
           <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-2xl">
             Een breed assortiment supplementen voor darmflora, huid, vacht, gewrichten,
-            weerstand en ouder wordende dieren — altijd gekozen op basis van wat jouw
+            weerstand en ouder wordende dieren, altijd gekozen op basis van wat jouw
             dier echt nodig heeft.
           </p>
         </Reveal>
