@@ -15,7 +15,7 @@ export const Route = createFileRoute("/advies")({
 });
 
 const steps = [
-  ["01", "Intake", "We luisteren naar jouw verhaal en dat van je hond — leeftijd, ras, leefstijl en klachten."],
+  ["01", "Intake", "We luisteren naar jouw verhaal en dat van je hond, leeftijd, ras, leefstijl en klachten."],
   ["02", "Analyse", "We bekijken de huidige voeding kritisch: ingrediënten, samenstelling en hoeveelheden."],
   ["03", "Advies", "Persoonlijk voedingsadvies, afgestemd op gezondheid, klachten en jouw situatie."],
   ["04", "Voedingsplan", "We stellen een concreet plan op, inclusief overstap, hoeveelheden en supplementen."],

@@ -6,7 +6,7 @@ export const Route = createFileRoute("/trimsalon")({
   head: () => ({
     meta: [
       { title: "Hondentrimsalon Elswout · Professionele vachtverzorging Haarlem" },
-      { name: "description", content: "Hondentrimsalon Elswout — professionele vachtverzorging met aandacht voor welzijn, in samenwerking met De Houten Hond in Haarlem." },
+      { name: "description", content: "Hondentrimsalon Elswout, professionele vachtverzorging met aandacht voor welzijn, in samenwerking met De Houten Hond in Haarlem." },
       { property: "og:title", content: "Hondentrimsalon Elswout" },
       { property: "og:description", content: "Professionele vachtverzorging in Haarlem, verbonden aan natuurvoedingswinkel De Houten Hond." },
     ],
@@ -43,7 +43,7 @@ function Trim() {
       <section className="py-24">
         <div className="container-prose grid md:grid-cols-3 gap-6">
           {[
-            ["Vachtverzorging", "Wassen, knippen, trimmen — afgestemd op het ras en de vacht van jouw hond."],
+            ["Vachtverzorging", "Wassen, knippen, trimmen, afgestemd op het ras en de vacht van jouw hond."],
             ["Welzijn voorop", "Een rustige omgeving, geen haast en oog voor de signalen van je hond."],
             ["Persoonlijke aandacht", "Geen lopende band. Jouw hond krijgt onze volle aandacht tijdens de afspraak."],
           ].map((c, i) => (

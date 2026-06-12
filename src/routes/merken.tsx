@@ -6,23 +6,23 @@ export const Route = createFileRoute("/merken")({
     meta: [
       { title: "Onze merken · De Houten Hond Haarlem" },
       { name: "description", content: "Een overzicht van de natuurlijke en biologische voedingsmerken voor honden en katten in ons assortiment in Haarlem." },
-      { property: "og:title", content: "Onze merken — De Houten Hond" },
-      { property: "og:description", content: "Naturly, Amanova, YDOLO, Hubertus Gold en meer — zorgvuldig geselecteerd." },
+      { property: "og:title", content: "Onze merken, De Houten Hond" },
+      { property: "og:description", content: "Naturly, Amanova, YDOLO, Hubertus Gold en meer, zorgvuldig geselecteerd." },
     ],
   }),
   component: Merken,
 });
 
 const brands = [
-  { name: "Naturly", tag: "Voorheen Bio-Ron", desc: "Bekende naam in natuurlijke producten — denk aan Bokashi, veendrenkstof en hennepproducten. Nieuwe naam, dezelfde vertrouwde kwaliteit." },
+  { name: "Naturly", tag: "Voorheen Bio-Ron", desc: "Bekende naam in natuurlijke producten, denk aan Bokashi, veendrenkstof en hennepproducten. Nieuwe naam, dezelfde vertrouwde kwaliteit." },
   { name: "Amanova", tag: "Spaans premium", desc: "Premium voeding met vers vlees als hoofdingrediënt. Geen vleesmeel, niet genetisch gemodificeerd. Uitstekend voor gevoelige honden." },
   { name: "YDOLO", tag: "Semi-moist", desc: "Holistische semi-moist voeding zonder kunstmatige toevoegingen. Ondersteunt darmen, gewrichten, nieren, lever en immuunsysteem." },
   { name: "Hubertus Gold", tag: "Premium", desc: "Hoog vleespercentage, goede verteerbaarheid. Geschikt voor actieve honden die kwaliteitsvoeding verdienen." },
   { name: "IMBY", tag: "Insect & vegan", desc: "Insect based en vegan voeding. Hypoallergeen en ondersteunend voor darmflora en spijsvertering." },
-  { name: "Nature Dog Food", tag: "Mono-proteïne", desc: "Hypoallergene mono-proteïne voeding met natuurlijke ingrediënten — een fijne keuze voor gevoelige honden." },
+  { name: "Nature Dog Food", tag: "Mono-proteïne", desc: "Hypoallergene mono-proteïne voeding met natuurlijke ingrediënten, een fijne keuze voor gevoelige honden." },
   { name: "Riverwood", tag: "Graanvrij", desc: "Hoog vleespercentage, geen granen of gluten, veel verse groenten en fruit." },
   { name: "DARF", tag: "KVV-specialist", desc: "Kompleet Vers Vlees en natuurlijke voeding, bekend voor gevoelige honden." },
-  { name: "Greenheart Premiums", tag: "Belangrijk merk", desc: "Eén van de pijlers in ons assortiment — natuurlijke voeding met aandacht voor kwaliteit." },
+  { name: "Greenheart Premiums", tag: "Belangrijk merk", desc: "Eén van de pijlers in ons assortiment, natuurlijke voeding met aandacht voor kwaliteit." },
   { name: "Yarrah", tag: "Biologisch", desc: "Biologisch geproduceerde voeding, een vertrouwde naam voor de bewuste eigenaar." },
   { name: "Kivo", tag: "Vers vlees", desc: "KVV en vers vlees voor wie kiest voor een rauwe voedingsbenadering." },
   { name: "Biofood", tag: "Biologisch", desc: "Brede biologische lijn van voeding en snacks voor hond en kat." },
