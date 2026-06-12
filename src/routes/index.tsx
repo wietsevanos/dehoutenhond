@@ -52,7 +52,7 @@ function Home() {
             <div className="lg:col-span-6">
               <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-sand">
                 <img
-                  src={heroShop}
+                  src={heroShop.url}
                   alt="Het warme interieur van natuurvoedingswinkel De Houten Hond in Haarlem"
                   width={1600}
                   height={1200}
