@@ -77,7 +77,7 @@ function Home() {
             <p className="text-lg leading-relaxed text-foreground/85">
               De Houten Hond is gespecialiseerd in natuurlijke en biologische voeding voor
               honden en katten. Bij ons vind je rauwvoer en KVV, hypoallergene voeding,
-              supplementen en natuurlijke verzorging — altijd met persoonlijk advies.
+              supplementen en natuurlijke verzorging, altijd met persoonlijk advies.
             </p>
             <p className="mt-5 text-base text-muted-foreground leading-relaxed">
               We geloven dat de juiste voeding de basis is voor een gezonde huid en vacht,
