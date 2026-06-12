@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
       { title: "De Houten Hond · Natuurvoeding voor hond en kat in Haarlem" },
       { name: "description", content: "Biologische en natuurlijke hondenvoeding, kattenvoeding, KVV, rauwvoer, voedingsadvies op maat en professionele vachtverzorging in Haarlem." },
       { property: "og:title", content: "De Houten Hond · Natuurvoeding voor hond en kat" },
-      { property: "og:description", content: "Specialist in natuurlijke voeding voor honden en katten — persoonlijk advies in Haarlem." },
+      { property: "og:description", content: "Specialist in natuurlijke voeding voor honden en katten, persoonlijk advies in Haarlem." },
     ],
   }),
   component: Home,
@@ -216,7 +216,7 @@ function Home() {
             </p>
             <p className="mt-5 text-base text-muted-foreground leading-relaxed">
               Vandaag richt ze zich volledig op natuurlijke voeding, homeopathische
-              ondersteuning en supplementen — met een eigen visie op diergezondheid
+              ondersteuning en supplementen, met een eigen visie op diergezondheid
               waarin de oorzaak voorop staat, niet alleen het symptoom.
             </p>
             <Link to="/over" className="mt-8 inline-flex items-center gap-2 text-walnut hover:gap-3 transition-all">

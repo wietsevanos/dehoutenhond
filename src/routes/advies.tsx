@@ -6,7 +6,7 @@ export const Route = createFileRoute("/advies")({
   head: () => ({
     meta: [
       { title: "Voedingsadvies op maat voor je hond · De Houten Hond" },
-      { name: "description", content: "Persoonlijk voedingsadvies en voedingsplan op maat voor jouw hond — bij allergieën, huidproblemen, darmklachten of overgewicht. Haarlem." },
+      { name: "description", content: "Persoonlijk voedingsadvies en voedingsplan op maat voor jouw hond, bij allergieën, huidproblemen, darmklachten of overgewicht. Haarlem." },
       { property: "og:title", content: "Voedingsadvies op maat" },
       { property: "og:description", content: "Een persoonlijk voedingsplan voor jouw hond, opgesteld door specialist Brenda in Haarlem." },
     ],
@@ -18,7 +18,7 @@ const steps = [
   ["01", "Intake", "We luisteren naar jouw verhaal en dat van je hond — leeftijd, ras, leefstijl en klachten."],
   ["02", "Analyse", "We bekijken de huidige voeding kritisch: ingrediënten, samenstelling en hoeveelheden."],
   ["03", "Advies", "Persoonlijk voedingsadvies, afgestemd op gezondheid, klachten en jouw situatie."],
-  ["04", "Voedingsplan", "We stellen een concreet plan op — inclusief overstap, hoeveelheden en supplementen."],
+  ["04", "Voedingsplan", "We stellen een concreet plan op, inclusief overstap, hoeveelheden en supplementen."],
   ["05", "Evaluatie", "Na enkele weken evalueren we het effect en stellen waar nodig bij."],
 ];
 
@@ -32,7 +32,7 @@ function Advies() {
             Voedingsadvies <span className="italic-serif text-moss">op maat</span>.
           </h1>
           <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            Iedere hond is uniek. Daarom verdient iedere hond een persoonlijk advies —
+            Iedere hond is uniek. Daarom verdient iedere hond een persoonlijk advies,
             geen standaardpakket, maar een plan dat past bij ras, leeftijd, gezondheid
             en levensritme.
           </p>

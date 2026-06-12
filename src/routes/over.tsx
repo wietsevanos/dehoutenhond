@@ -48,14 +48,14 @@ function Over() {
             <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/85">
               <p>
                 Kinderen van klanten noemden onze winkel al snel "de snoepwinkel voor
-                de hond" — vanwege de uitgebreide selectie gezonde snacks, kauwproducten
+                de hond", vanwege de uitgebreide selectie gezonde snacks, kauwproducten
                 en natuurlijke voeding. De jongste dochter van een vaste klant vroeg altijd
                 of zij mee mocht naar "de winkel met de houten hond".
               </p>
               <p>
                 Daar kwam uiteindelijk de naam vandaan: <em className="italic-serif">De Houten Hond</em>.
-                Een naam die past bij de warme, ambachtelijke sfeer van het Ramplaankwartier
-                — waar veel klanten een bezoek aan de winkel combineren met een wandeling
+                Een naam die past bij de warme, ambachtelijke sfeer van het Ramplaankwartier,
+                waar veel klanten een bezoek aan de winkel combineren met een wandeling
                 in de duinen of op het strand.
               </p>
               <p>
@@ -91,7 +91,7 @@ function Over() {
                 Later koos ze ervoor zich volledig te richten op natuurlijke voeding
                 en natuurlijke ondersteuning. Door jarenlange ervaring met homeopathische
                 ondersteuning, supplementen en voedingsanalyses ontwikkelde zij een eigen
-                visie op diergezondheid — een visie waarin oorzaak en welzijn centraal staan.
+                visie op diergezondheid, een visie waarin oorzaak en welzijn centraal staan.
               </p>
             </div>
           </Reveal>
@@ -108,7 +108,7 @@ function Over() {
             <p className="mt-6 text-lg leading-relaxed text-foreground/85">
               We geloven dat voeding een enorme invloed heeft op de huid, vacht, darmflora,
               weerstand, energie en het algemeen welzijn van honden en katten. Bij
-              gezondheidsproblemen kijken we daarom altijd naar de oorzaak — niet alleen
+              gezondheidsproblemen kijken we daarom altijd naar de oorzaak, niet alleen
               naar het symptoom.
             </p>
             <div className="mt-10 grid sm:grid-cols-2 gap-x-10 gap-y-8">
