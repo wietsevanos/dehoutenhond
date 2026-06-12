@@ -5,7 +5,7 @@ import dogTreat from "@/assets/dog-treat.jpg";
 import rawFoodAsset from "@/assets/natuurvoeding.png.asset.json";
 import dogCatAsset from "@/assets/voedingsadvies.png.asset.json";
 import groomingAsset from "@/assets/trimsalon.png.asset.json";
-import brenda from "@/assets/brenda.jpg";
+import brendaAsset from "@/assets/brenda.png.asset.json"; const brenda = brendaAsset.url;
 const rawFood = rawFoodAsset.url;
 const dogCat = dogCatAsset.url;
 const grooming = groomingAsset.url;

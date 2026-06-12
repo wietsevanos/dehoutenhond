@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import brenda from "@/assets/brenda.jpg";
+import brendaAsset from "@/assets/brenda.png.asset.json"; const brenda = brendaAsset.url;
 import heroShop from "@/assets/hero-shop.jpg";
 import { Reveal } from "@/components/Reveal";
 
