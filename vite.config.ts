@@ -1,15 +1,74 @@
-// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
-// or the app will break with duplicate plugins:
-//   - tanstackStart, viteReact, tailwindcss, tsConfigPaths, nitro (build-only using cloudflare as a default target),
-//     componentTagger (dev-only), VITE_* env injection, @ path alias, React/TanStack dedupe,
-//     error logger plugins, and sandbox detection (port/host/strictPort).
-// You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import tsconfigPaths from "vite-tsconfig-paths";
+import path from "node:path";
+import fs from "node:fs";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// Absolute prefix for Lovable CDN-hosted assets so they keep working when
+// the static build is hosted on DirectAdmin (or anywhere not on Lovable).
+const ASSET_ORIGIN = "https://houten-hond-reimagined.lovable.app";
+
+// Vite plugin: rewrite the `url` field of every *.asset.json import so it
+// becomes an absolute URL pointing at the Lovable CDN.
+function assetJsonAbsolute() {
+  return {
+    name: "asset-json-absolute",
+    enforce: "pre" as const,
+    load(id: string) {
+      const clean = id.split("?")[0];
+      if (!clean.endsWith(".asset.json")) return null;
+      const raw = fs.readFileSync(clean, "utf-8");
+      const json = JSON.parse(raw) as { url?: string };
+      if (typeof json.url === "string" && json.url.startsWith("/")) {
+        json.url = ASSET_ORIGIN + json.url;
+      }
+      return JSON.stringify(json);
+    },
+  };
+}
+
+// Vite plugin: after build, copy .htaccess into dist/.
+function copyHtaccess() {
+  return {
+    name: "copy-htaccess",
+    closeBundle() {
+      const src = path.resolve(__dirname, "public/.htaccess");
+      const dest = path.resolve(__dirname, "dist/.htaccess");
+      if (fs.existsSync(src)) fs.copyFileSync(src, dest);
+    },
+  };
+}
 
 export default defineConfig({
-  tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
-    server: { entry: "server" },
+  root: path.resolve(__dirname, "spa"),
+  publicDir: path.resolve(__dirname, "public"),
+  plugins: [
+    assetJsonAbsolute(),
+    tsconfigPaths({ root: __dirname }),
+    react(),
+    tailwindcss(),
+    copyHtaccess(),
+  ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      "@tanstack/react-router": path.resolve(__dirname, "src/spa/tanstack-shim.tsx"),
+    },
+  },
+  server: {
+    host: "::",
+    port: 8080,
+  },
+  build: {
+    outDir: path.resolve(__dirname, "dist"),
+    emptyOutDir: true,
+    sourcemap: false,
+    rollupOptions: {
+      input: path.resolve(__dirname, "spa/index.html"),
+    },
   },
 });
