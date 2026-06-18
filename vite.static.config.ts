@@ -4,6 +4,9 @@ import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import path from "node:path";
 import fs from "node:fs";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Absolute prefix for Lovable CDN-hosted assets so they keep working when
 // the static build is hosted on DirectAdmin (or anywhere not on Lovable).
