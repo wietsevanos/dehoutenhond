@@ -57,5 +57,8 @@ export default defineConfig({
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
     sourcemap: false,
+    rollupOptions: {
+      input: path.resolve(__dirname, "spa/index.html"),
+    },
   },
 });
