@@ -34,7 +34,7 @@ function Over() {
       <section className="container-prose">
         <Reveal>
           <div className="aspect-[16/8] rounded-3xl overflow-hidden bg-sand">
-            <img src={heroShop} alt="Het interieur van De Houten Hond" loading="lazy" width={1600} height={900}
+            <img src={overHero} alt="Brenda in De Houten Hond" loading="lazy" width={1600} height={900}
               className="w-full h-full object-cover" />
           </div>
         </Reveal>
