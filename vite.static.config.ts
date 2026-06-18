@@ -46,7 +46,7 @@ function copyHtaccess() {
 export default defineConfig({
   root: path.resolve(__dirname, "spa"),
   publicDir: path.resolve(__dirname, "public"),
-  plugins: [assetJsonAbsolute(), tsconfigPaths({ root: __dirname }), react(), tailwindcss()],
+  plugins: [assetJsonAbsolute(), tsconfigPaths({ root: __dirname }), react(), tailwindcss(), copyHtaccess()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
