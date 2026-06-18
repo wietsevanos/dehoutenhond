@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import brendaAsset from "@/assets/brenda.png.asset.json"; const brenda = brendaAsset.url;
-import heroShop from "@/assets/hero-shop.jpg";
+import overHeroAsset from "@/assets/over-hero.png.asset.json"; const overHero = overHeroAsset.url;
 import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/over")({
@@ -34,7 +34,7 @@ function Over() {
       <section className="container-prose">
         <Reveal>
           <div className="aspect-[16/8] rounded-3xl overflow-hidden bg-sand">
-            <img src={heroShop} alt="Het interieur van De Houten Hond" loading="lazy" width={1600} height={900}
+            <img src={overHero} alt="Brenda in De Houten Hond" loading="lazy" width={1600} height={900}
               className="w-full h-full object-cover" />
           </div>
         </Reveal>
