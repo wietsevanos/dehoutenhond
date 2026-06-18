@@ -26,7 +26,7 @@ function assetJsonAbsolute() {
       if (typeof json.url === "string" && json.url.startsWith("/")) {
         json.url = ASSET_ORIGIN + json.url;
       }
-      return `export default ${JSON.stringify(json)};`;
+      return JSON.stringify(json);
     },
   };
 }
